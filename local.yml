@@ -3,6 +3,6 @@
     source_key: "./ssh/id_ed25519"
     destination_key: "{{ lookup('env', 'HOME') }}/.ssh/id_ed25519"
   tasks:
-    - include tasks/ssh.yml
-    - include tasks/git-config-setup.yml
+    - include: tasks/ssh.yml
+    - include: tasks/git-config-setup.yml
 
